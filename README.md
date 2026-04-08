@@ -1,5 +1,5 @@
 # Computer Queue plugin
 
-This plugin displays the queue for a given computer in its page.
+This plugin adds a widget to computers showing queued items that the computer can take.
  
-![](docs/images/computer.jpg)
+![](docs/images/computer.png)

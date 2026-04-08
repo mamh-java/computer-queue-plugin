@@ -1,4 +1,9 @@
 /target/
-.*
-!.gitignore
+.checkstyle
+.classpath
+.project
+.settings
+work
+.idea
+/jenkins_data
 *.iml
