@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>3.55</version>
+    <version>6.2138.v03274d462c13</version>
   </parent>
 
   <groupId>jenkins.ci.plugins.computerqueue</groupId>
@@ -11,13 +11,21 @@
   <version>1.8-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <url>https://github.com/jenkinsci/computer-queue-plugin</url>
-  <name>computer-queue-plugin</name>
-  
-  <developers />
+  <name>Computer Queue</name>
+
+  <scm>
+    <connection>scm:git:ssh://github.com/jenkinsci/computer-queue-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/computer-queue-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/computer-queue-plugin</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
-    <jenkins.version>2.150</jenkins.version>
-    <java.level>8</java.level>
+    <jenkins.baseline>2.528</jenkins.baseline>
+    <jenkins.version>${jenkins.baseline}.3</jenkins.version>
+    <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
+    <ban-commons-lang-2.skip>false</ban-commons-lang-2.skip>
+    <hpi.strictBundledArtifacts>true</hpi.strictBundledArtifacts>
   </properties>
 
   <repositories>
@@ -33,12 +41,4 @@
       <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
-  
-  <scm>
-    <connection>scm:git:ssh://github.com/jenkinsci/computer-queue-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/computer-queue-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/computer-queue-plugin</url>
-    <tag>HEAD</tag>
-  </scm>
-  
 </project>
